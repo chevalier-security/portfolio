@@ -72,9 +72,10 @@ export default function Projects() {
               view details
             </Button>
           </div>
-          <br />
         </Container>
-
+        
+        <br />
+        
         <Container>
           <div
             className="card"
