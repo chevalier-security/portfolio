@@ -72,6 +72,7 @@ export default function Projects() {
               view details
             </Button>
           </div>
+          <br />
         </Container>
 
         <Container>
