@@ -81,7 +81,7 @@ export default function Projects() {
             className="card"
             style={{
               maxWidth: "720px",
-              margin: "0 auto",
+              margin: "36px auto 0",
               padding: "40px"
             }}
           >
