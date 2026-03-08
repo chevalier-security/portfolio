@@ -19,9 +19,14 @@ export default function Button({ children, href, variant = "primary" }: Props) {
 
   const style = variant === "primary" ? primary : secondary
 
+  const isExternal = href.startsWith("http") || href.startsWith("mailto:")
+
   return (
     <a
       href={href}
+      {...(isExternal
+        ? { target: "_blank", rel: "noopener noreferrer" }
+        : {})}
       style={{
         ...style,
         padding: "12px 22px",

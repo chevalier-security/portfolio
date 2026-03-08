@@ -33,7 +33,7 @@ export default function ContactCTA() {
           i'm available for security engineering, infrastructure development, and system design.
         </p>
 
-        <Button href="/contact">contact</Button>
+        <Button href="#/contact">contact</Button>
       </Container>
     </section>
   )

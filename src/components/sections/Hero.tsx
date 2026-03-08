@@ -49,8 +49,8 @@ export default function Hero() {
           </p>
 
           <div style={{ display: "flex", gap: "16px" }}>
-            <Button href="/projects">view work</Button>
-            <Button href="/contact" variant="secondary">
+            <Button href="#/projects">view work</Button>
+            <Button href="#/contact" variant="secondary">
               contact
             </Button>
           </div>

@@ -36,31 +36,51 @@ export default function Contact() {
       <section style={{ padding: "80px 0", backgroundColor: "#94856a" }}>
         <Container>
           <div
+            className="card"
             style={{
               maxWidth: "720px",
               margin: "0 auto",
               padding: "40px",
-              borderRadius: "12px",
-              background: "#f5e7d0"
+              display: "flex",
+              flexWrap: "wrap",
+              gap: "32px"
             }}
           >
-            <h2
+            <div style={{ flex: 1, minWidth: "260px" }}>
+              <h2
+                style={{
+                  fontSize: "22px",
+                  marginBottom: "16px",
+                  fontWeight: 600
+                }}
+              >
+                github
+              </h2>
+
+              <p style={{ color: "#555", marginBottom: "24px", lineHeight: 1.6 }}>
+                see code samples, tooling, and side projects.
+              </p>
+            </div>
+
+            <div
               style={{
-                fontSize: "22px",
-                marginBottom: "16px",
-                fontWeight: 600
+                minWidth: "240px",
+                display: "flex",
+                flexDirection: "column",
+                gap: "18px",
+                justifyContent: "space-between",
+                borderLeft: "1px solid rgba(0, 0, 0, 0.12)",
+                paddingLeft: "24px"
               }}
             >
-              github
-            </h2>
+              <div style={{ fontSize: "14px", color: "var(--muted)", lineHeight: 1.4 }}>
+                best for quick code references and issue history.
+              </div>
 
-            <p style={{ color: "#555", marginBottom: "24px", lineHeight: 1.6 }}>
-              see code samples, tooling, and side projects.
-            </p>
-
-            <Button href="https://github.com/your-username" variant="secondary">
-              https://github.com/chevalier-security
-            </Button>
+              <Button href="https://github.com/chevalier-security" variant="primary">
+                https://github.com/chevalier-security
+              </Button>
+            </div>
           </div>
         </Container>
       </section>
@@ -68,31 +88,51 @@ export default function Contact() {
       <section style={{ padding: "80px 0", backgroundColor: "#f5e7d0" }}>
         <Container>
           <div
+            className="card"
             style={{
               maxWidth: "720px",
               margin: "0 auto",
               padding: "40px",
-              borderRadius: "12px",
-              background: "#e0d2b8"
+              display: "flex",
+              flexWrap: "wrap",
+              gap: "32px"
             }}
           >
-            <h2
+            <div style={{ flex: 1, minWidth: "260px" }}>
+              <h2
+                style={{
+                  fontSize: "22px",
+                  marginBottom: "16px",
+                  fontWeight: 600
+                }}
+              >
+                linkedin
+              </h2>
+
+              <p style={{ color: "#555", marginBottom: "24px", lineHeight: 1.6 }}>
+                professional profile, experience, and recommendations.
+              </p>
+            </div>
+
+            <div
               style={{
-                fontSize: "22px",
-                marginBottom: "16px",
-                fontWeight: 600
+                minWidth: "240px",
+                display: "flex",
+                flexDirection: "column",
+                gap: "18px",
+                justifyContent: "space-between",
+                borderLeft: "1px solid rgba(0, 0, 0, 0.12)",
+                paddingLeft: "24px"
               }}
             >
-              linkedin
-            </h2>
+              <div style={{ fontSize: "14px", color: "var(--muted)", lineHeight: 1.4 }}>
+                good for connection requests and professional context.
+              </div>
 
-            <p style={{ color: "#555", marginBottom: "24px", lineHeight: 1.6 }}>
-              professional profile, experience, and recommendations.
-            </p>
-
-            <Button href="https://linkedin.com/in/your-username" variant="secondary">
-              linkedin.com/in/sage-taylor-270546347/
-            </Button>
+              <Button href="https://linkedin.com/in/sage-taylor-270546347/" variant="primary">
+                linkedin.com/in/sage-taylor-270546347/
+              </Button>
+            </div>
           </div>
         </Container>
       </section>
@@ -100,31 +140,51 @@ export default function Contact() {
       <section style={{ padding: "80px 0", backgroundColor: "#94856a" }}>
         <Container>
           <div
+            className="card"
             style={{
               maxWidth: "720px",
               margin: "0 auto",
               padding: "40px",
-              borderRadius: "12px",
-              background: "#f5e7d0"
+              display: "flex",
+              flexWrap: "wrap",
+              gap: "32px"
             }}
           >
-            <h2
+            <div style={{ flex: 1, minWidth: "260px" }}>
+              <h2
+                style={{
+                  fontSize: "22px",
+                  marginBottom: "16px",
+                  fontWeight: 600
+                }}
+              >
+                business site
+              </h2>
+
+              <p style={{ color: "#555", marginBottom: "24px", lineHeight: 1.6 }}>
+                consulting site
+              </p>
+            </div>
+
+            <div
               style={{
-                fontSize: "22px",
-                marginBottom: "16px",
-                fontWeight: 600
+                minWidth: "240px",
+                display: "flex",
+                flexDirection: "column",
+                gap: "18px",
+                justifyContent: "space-between",
+                borderLeft: "1px solid rgba(0, 0, 0, 0.12)",
+                paddingLeft: "24px"
               }}
             >
-              business site
-            </h2>
+              <div style={{ fontSize: "14px", color: "var(--muted)", lineHeight: 1.4 }}>
+                landing page for services + contact details.
+              </div>
 
-            <p style={{ color: "#555", marginBottom: "24px", lineHeight: 1.6 }}>
-              consulting site
-            </p>
-
-            <Button href="https://your-business-site.com" variant="secondary">
-              https://chevaliersecurity.org/
-            </Button>
+              <Button href="https://chevaliersecurity.org/" variant="primary">
+                https://chevaliersecurity.org/
+              </Button>
+            </div>
           </div>
         </Container>
       </section>
@@ -132,38 +192,58 @@ export default function Contact() {
       <section style={{ padding: "80px 0", backgroundColor: "#f5e7d0" }}>
         <Container>
           <div
+            className="card"
             style={{
               maxWidth: "720px",
               margin: "0 auto",
               padding: "40px",
-              borderRadius: "12px",
-              background: "#e0d2b8"
+              display: "flex",
+              flexWrap: "wrap",
+              gap: "32px"
             }}
           >
-            <h2
+            <div style={{ flex: 1, minWidth: "260px" }}>
+              <h2
+                style={{
+                  fontSize: "22px",
+                  marginBottom: "16px",
+                  fontWeight: 600
+                }}
+              >
+                email
+              </h2>
+
+              <p style={{ color: "#555", marginBottom: "24px", lineHeight: 1.6 }}>
+                send a message with questions, collaboration, or availability.
+              </p>
+            </div>
+
+            <div
               style={{
-                fontSize: "22px",
-                marginBottom: "16px",
-                fontWeight: 600
+                minWidth: "240px",
+                display: "flex",
+                flexDirection: "column",
+                gap: "18px",
+                justifyContent: "space-between",
+                borderLeft: "1px solid rgba(0, 0, 0, 0.12)",
+                paddingLeft: "24px"
               }}
             >
-              email
-            </h2>
+              <div style={{ fontSize: "14px", color: "var(--muted)", lineHeight: 1.4 }}>
+                fastest response via encrypted email.
+              </div>
 
-            <p style={{ color: "#555", marginBottom: "24px", lineHeight: 1.6 }}>
-              send a message with questions, collaboration, or availability.
-            </p>
-
-            <Button href="mailto:hello@yourdomain.com" variant="secondary">
-              info.chevalier@proton.me
-            </Button>
+              <Button href="mailto:info.chevalier@proton.me" variant="primary">
+                info.chevalier@proton.me
+              </Button>
+            </div>
           </div>
         </Container>
       </section>
 
-       <section style={{ padding: "20px 0", backgroundColor: "#94856a" }}>
+      <section style={{ padding: "20px 0", backgroundColor: "#94856a" }}>
         <Container>
-          <Button href="/" variant="secondary">
+          <Button href="#/" variant="secondary">
             back to home
           </Button>
         </Container>
