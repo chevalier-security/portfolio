@@ -6,8 +6,8 @@ export default function ProjectsPreview() {
     <section
       style={{
         padding: "100px 0",
-        borderTop: "1px solid #eee",
-        backgroundColor: "#94856a"
+        borderTop: "1px solid var(--border-subtle)",
+        backgroundColor: "var(--bg-alt)"
       }}
     >
       <Container>
@@ -16,7 +16,8 @@ export default function ProjectsPreview() {
           style={{
             fontSize: "28px",
             marginBottom: "60px",
-            fontWeight: 600
+            fontWeight: 600,
+            color: "var(--accent-soft)"
           }}
         >
           selected work
@@ -30,7 +31,8 @@ export default function ProjectsPreview() {
                 style={{
                   fontSize: "20px",
                   marginBottom: "10px",
-                  fontWeight: 600
+                  fontWeight: 600,
+                  color: "var(--accent-soft)"
                 }}
               >
                 {project.title}
@@ -38,7 +40,7 @@ export default function ProjectsPreview() {
 
               <p
                 style={{
-                  color: "#f5e7d0",
+                  color: "var(--text)",
                   marginBottom: "12px",
                   lineHeight: 1.6
                 }}
@@ -49,7 +51,7 @@ export default function ProjectsPreview() {
               <div
                 style={{
                   fontSize: "14px",
-                  color: "#f5f2e8"
+                  color: "var(--text)"
                 }}
               >
                 {project.stack.join(" • ")}

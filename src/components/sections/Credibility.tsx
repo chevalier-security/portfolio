@@ -13,9 +13,9 @@ export default function Credibility() {
     <section
       style={{
         padding: "60px 0",
-        borderTop: "1px solid #eee",
-        borderBottom: "1px solid #eee",
-        backgroundColor: "#94856a"
+        borderTop: "1px solid var(--border-subtle)",
+        borderBottom: "1px solid var(--border-subtle)",
+        backgroundColor: "var(--bg-alt)"
       }}
     >
       <Container>
@@ -32,7 +32,7 @@ export default function Credibility() {
               key={item}
               style={{
                 fontSize: "14px",
-                color: "#f5e7d0",
+                color: "var(--accent-soft)",
                 letterSpacing: "0.4px"
               }}
             >

@@ -6,9 +6,10 @@ export default function ContactCTA() {
     <section
       style={{
         padding: "120px 0",
-        borderTop: "1px solid #eee",
+        borderTop: "1px solid var(--border-subtle)",
         textAlign: "center",
-        backgroundColor: "#f5e7d0"
+        backgroundColor: "var(--bg-soft)",
+        color: "var(--ink)"
       }}
     >
       <Container>
@@ -25,7 +26,7 @@ export default function ContactCTA() {
         <p
           style={{
             fontSize: "16px",
-            color: "#555",
+              color: "var(--ink-muted)",
             lineHeight: 1.7,
             marginBottom: "40px"
           }}

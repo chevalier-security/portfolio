@@ -6,18 +6,21 @@ export default function Hero() {
     <section
       style={{
         padding: "140px 0 120px 0",
-        backgroundColor: "#f5e7d0"
+        backgroundColor: "var(--bg)"
       }}
     >
       <Container>
         <div style={{ maxWidth: "720px" }}>
-          
           <h1
             style={{
-              fontSize: "56px",
+              fontSize: "clamp(3rem, 8vw, 5.5rem)",
               fontWeight: 600,
               marginBottom: "28px",
-              letterSpacing: "-1px"
+              letterSpacing: "0.2px",
+              lineHeight: 1,
+              fontFamily: '"Cormorant Garamond", serif',
+              color: "var(--accent-soft)",
+              textTransform: "capitalize"
             }}
           >
             sage taylor
@@ -28,18 +31,19 @@ export default function Hero() {
               fontSize: "22px",
               lineHeight: 1.6,
               marginBottom: "28px",
-              fontWeight: 500
+              fontWeight: 500,
+              color: "var(--accent)"
             }}
           >
             security engineering<br />
-            infrastructure systems<br />
+            corporate intelligence<br />
             software development
           </div>
 
           <p
             style={{
               fontSize: "18px",
-              color: "#555",
+              color: "var(--muted)",
               lineHeight: 1.7,
               marginBottom: "40px"
             }}
@@ -54,7 +58,6 @@ export default function Hero() {
               contact
             </Button>
           </div>
-
         </div>
       </Container>
     </section>

@@ -5,8 +5,8 @@ export default function Philosophy() {
     <section
       style={{
         padding: "100px 0",
-        borderTop: "1px solid #eee",
-        backgroundColor: "#94856a"
+        borderTop: "1px solid var(--border-subtle)",
+        backgroundColor: "var(--bg-alt)"
       }}
     >
       <Container>
@@ -14,7 +14,8 @@ export default function Philosophy() {
           style={{
             fontSize: "28px",
             marginBottom: "40px",
-            fontWeight: 600
+            fontWeight: 600,
+            color: "var(--accent-soft)"
           }}
         >
           philosophy
@@ -24,7 +25,7 @@ export default function Philosophy() {
           style={{
             fontSize: "16px",
             lineHeight: 1.8,
-            color: "#f5e7d0",
+            color: "var(--text)",
             maxWidth: "700px"
           }}
         >

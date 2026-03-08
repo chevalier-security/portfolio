@@ -1,12 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap");
+
 :root {
-  --bg: #f5e7d0;
-  --bg-alt: #94856a;
-  --text: #111;
-  --muted: #555;
-  --border: rgba(0, 0, 0, 0.12);
-  --card: rgba(250, 245, 236, 0.95);
-  --shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
-  --transition: 160ms ease;
+  --bg: #080508;
+  --bg-alt: #140c14;
+  --bg-soft: #f8eef3;
+  --bg-soft-alt: #fff7fb;
+  --text: #f9eef4;
+  --muted: #dfc1d0;
+  --ink: #22121b;
+  --ink-muted: #5f4452;
+  --accent: #e7669e;
+  --accent-soft: #f3c6db;
+  --border: rgba(231, 102, 158, 0.52);
+  --border-subtle: rgba(231, 102, 158, 0.28);
+  --card: rgba(255, 249, 253, 0.94);
+  --shadow: 0 12px 26px rgba(20, 8, 16, 0.16);
+  --transition: 180ms ease;
 }
 
 html {
@@ -15,9 +24,11 @@ html {
 
 body {
   margin: 0;
-  font-family: 'Inter', sans-serif;
-  background: radial-gradient(circle at 10% 10%, #fbf7ee 0%, #f1e7d0 55%, #f2f2f0 100%);
-  color: var(--text);
+  font-family: "Outfit", sans-serif;
+  background:
+    radial-gradient(circle at 12% 8%, rgba(231, 102, 158, 0.18) 0%, rgba(8, 5, 8, 0) 40%),
+    linear-gradient(180deg, #130914 0%, #09070b 100%);
+  color: var(--ink);
 }
 
 a {
@@ -37,13 +48,38 @@ ul {
 
 .card {
   background: var(--card);
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.05);
+  color: var(--ink);
+  border: 1px solid rgba(100, 56, 81, 0.2);
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(5px);
   transition: transform var(--transition), box-shadow var(--transition);
 }
 
 .card:hover {
   transform: translateY(-3px);
   box-shadow: var(--shadow);
+}
+
+section {
+  animation: section-rise 420ms ease both;
+}
+
+@keyframes section-rise {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
 }

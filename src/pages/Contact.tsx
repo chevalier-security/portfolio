@@ -5,7 +5,7 @@ export default function Contact() {
   return (
     <>
      
-      <section style={{ padding: "100px 0", backgroundColor: "#f5e7d0" }}>
+      <section style={{ padding: "100px 0", backgroundColor: "var(--bg-soft)", color: "var(--ink)" }}>
         <Container>
           <header style={{ textAlign: "center", marginBottom: "60px" }}>
             <h1
@@ -23,7 +23,7 @@ export default function Contact() {
                 maxWidth: "740px",
                 margin: "0 auto",
                 fontSize: "17px",
-                color: "#555",
+                color: "var(--ink-muted)",
                 lineHeight: 1.7
               }}
             >
@@ -33,7 +33,7 @@ export default function Contact() {
         </Container>
       </section>
 
-      <section style={{ padding: "80px 0", backgroundColor: "#94856a" }}>
+      <section style={{ padding: "80px 0", backgroundColor: "var(--bg-alt)", color: "var(--text)", borderTop: "1px solid var(--border-subtle)" }}>
         <Container>
           <div
             className="card"
@@ -57,7 +57,7 @@ export default function Contact() {
                 github
               </h2>
 
-              <p style={{ color: "#555", marginBottom: "24px", lineHeight: 1.6 }}>
+              <p style={{ color: "var(--ink-muted)", marginBottom: "24px", lineHeight: 1.6 }}>
                 see code samples, tooling, and side projects.
               </p>
             </div>
@@ -69,11 +69,11 @@ export default function Contact() {
                 flexDirection: "column",
                 gap: "18px",
                 justifyContent: "space-between",
-                borderLeft: "1px solid rgba(0, 0, 0, 0.12)",
+                borderLeft: "1px solid var(--border-subtle)",
                 paddingLeft: "24px"
               }}
             >
-              <div style={{ fontSize: "14px", color: "var(--muted)", lineHeight: 1.4 }}>
+              <div style={{ fontSize: "14px", color: "var(--ink-muted)", lineHeight: 1.4 }}>
                 best for quick code references and issue history.
               </div>
 
@@ -85,7 +85,7 @@ export default function Contact() {
         </Container>
       </section>
 
-      <section style={{ padding: "80px 0", backgroundColor: "#f5e7d0" }}>
+      <section style={{ padding: "80px 0", backgroundColor: "var(--bg-soft-alt)", color: "var(--ink)", borderTop: "1px solid var(--border-subtle)" }}>
         <Container>
           <div
             className="card"
@@ -109,7 +109,7 @@ export default function Contact() {
                 linkedin
               </h2>
 
-              <p style={{ color: "#555", marginBottom: "24px", lineHeight: 1.6 }}>
+              <p style={{ color: "var(--ink-muted)", marginBottom: "24px", lineHeight: 1.6 }}>
                 professional profile, experience, and recommendations.
               </p>
             </div>
@@ -121,11 +121,11 @@ export default function Contact() {
                 flexDirection: "column",
                 gap: "18px",
                 justifyContent: "space-between",
-                borderLeft: "1px solid rgba(0, 0, 0, 0.12)",
+                borderLeft: "1px solid var(--border-subtle)",
                 paddingLeft: "24px"
               }}
             >
-              <div style={{ fontSize: "14px", color: "var(--muted)", lineHeight: 1.4 }}>
+              <div style={{ fontSize: "14px", color: "var(--ink-muted)", lineHeight: 1.4 }}>
                 good for connection requests and professional context.
               </div>
 
@@ -137,7 +137,7 @@ export default function Contact() {
         </Container>
       </section>
 
-      <section style={{ padding: "80px 0", backgroundColor: "#94856a" }}>
+      <section style={{ padding: "80px 0", backgroundColor: "var(--bg-alt)", color: "var(--text)", borderTop: "1px solid var(--border-subtle)" }}>
         <Container>
           <div
             className="card"
@@ -161,7 +161,7 @@ export default function Contact() {
                 business site
               </h2>
 
-              <p style={{ color: "#555", marginBottom: "24px", lineHeight: 1.6 }}>
+              <p style={{ color: "var(--ink-muted)", marginBottom: "24px", lineHeight: 1.6 }}>
                 consulting site
               </p>
             </div>
@@ -173,11 +173,11 @@ export default function Contact() {
                 flexDirection: "column",
                 gap: "18px",
                 justifyContent: "space-between",
-                borderLeft: "1px solid rgba(0, 0, 0, 0.12)",
+                borderLeft: "1px solid var(--border-subtle)",
                 paddingLeft: "24px"
               }}
             >
-              <div style={{ fontSize: "14px", color: "var(--muted)", lineHeight: 1.4 }}>
+              <div style={{ fontSize: "14px", color: "var(--ink-muted)", lineHeight: 1.4 }}>
                 landing page for services + contact details.
               </div>
 
@@ -189,7 +189,7 @@ export default function Contact() {
         </Container>
       </section>
 
-      <section style={{ padding: "80px 0", backgroundColor: "#f5e7d0" }}>
+      <section style={{ padding: "80px 0", backgroundColor: "var(--bg-soft)", color: "var(--ink)", borderTop: "1px solid var(--border-subtle)" }}>
         <Container>
           <div
             className="card"
@@ -213,7 +213,7 @@ export default function Contact() {
                 email
               </h2>
 
-              <p style={{ color: "#555", marginBottom: "24px", lineHeight: 1.6 }}>
+              <p style={{ color: "var(--ink-muted)", marginBottom: "24px", lineHeight: 1.6 }}>
                 send a message with questions, collaboration, or availability.
               </p>
             </div>
@@ -225,11 +225,11 @@ export default function Contact() {
                 flexDirection: "column",
                 gap: "18px",
                 justifyContent: "space-between",
-                borderLeft: "1px solid rgba(0, 0, 0, 0.12)",
+                borderLeft: "1px solid var(--border-subtle)",
                 paddingLeft: "24px"
               }}
             >
-              <div style={{ fontSize: "14px", color: "var(--muted)", lineHeight: 1.4 }}>
+              <div style={{ fontSize: "14px", color: "var(--ink-muted)", lineHeight: 1.4 }}>
                 fastest response via encrypted email.
               </div>
 
@@ -241,7 +241,7 @@ export default function Contact() {
         </Container>
       </section>
 
-      <section style={{ padding: "20px 0", backgroundColor: "#94856a" }}>
+      <section style={{ padding: "20px 0", backgroundColor: "var(--bg-alt)", color: "var(--text)", borderTop: "1px solid var(--border-subtle)" }}>
         <Container>
           <Button href="#/" variant="secondary">
             back to home

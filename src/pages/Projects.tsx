@@ -4,8 +4,7 @@ import Button from "../components/ui/Button"
 export default function Projects() {
   return (
     <>
-      
-      <section style={{ padding: "100px 0", backgroundColor: "#f5e7d0" }}>
+      <section style={{ padding: "100px 0", backgroundColor: "var(--bg-soft)", color: "var(--ink)" }}>
         <Container>
           <header style={{ textAlign: "center", marginBottom: "60px" }}>
             <h1
@@ -23,7 +22,7 @@ export default function Projects() {
                 maxWidth: "740px",
                 margin: "0 auto",
                 fontSize: "17px",
-                color: "#555",
+                color: "var(--ink-muted)",
                 lineHeight: 1.7
               }}
             >
@@ -33,7 +32,14 @@ export default function Projects() {
         </Container>
       </section>
 
-      <section style={{ padding: "80px 0", backgroundColor: "#94856a" }}>
+      <section
+        style={{
+          padding: "80px 0",
+          backgroundColor: "var(--bg-alt)",
+          color: "var(--text)",
+          borderTop: "1px solid var(--border-subtle)"
+        }}
+      >
         <Container>
           <div
             className="card"
@@ -54,7 +60,7 @@ export default function Projects() {
             </h2>
             <p
               style={{
-                color: "#555",
+                color: "var(--ink-muted)",
                 marginBottom: "24px",
                 lineHeight: 1.6
               }}
@@ -67,6 +73,7 @@ export default function Projects() {
             </Button>
           </div>
         </Container>
+
         <Container>
           <div
             className="card"
@@ -87,14 +94,14 @@ export default function Projects() {
             </h2>
             <p
               style={{
-                color: "#555",
+                color: "var(--ink-muted)",
                 marginBottom: "24px",
                 lineHeight: 1.6
               }}
             >
               i've also built a custom access control facility management system. it supports many users and doors, you can assign users different access clearance, and you can assign doors different access requirements. the tech stack is a ruby on rails backend, and a custom react framework based frontend. it uses secure api protocol so that any data values used in login, as well as any stored values specific to your facility can only be accessed by you, and are only processed via secure ruby backend communication with the database. it's a very fluid, intuitive, and large secure system. in the future it will have more capabilities with different hardware, and when i can get the api keys, it could potentially manage other access control systems or facilities on your network. it could be my forever project. anyways, when i look at my ruby gemfile, i want to throw up, because i have no idea how i did any of it at this point. vibecoding was off the table for most of the project as railway did not enjoy working with me.
               firstly i made a local version of the system, i used postgresql, and containerized security via docker. by the time it's accessible, it should be completely closed source, and everything will be securely handled and private on a database. the only api endpoints that touch the react framework are input and output endpoints that send data to the ruby backend, then the ruby checks with the database and ensures that it's allowed to fetch the data.
-              </p>
+            </p>
             <Button href="/" variant="primary">
               view details
             </Button>
@@ -102,7 +109,14 @@ export default function Projects() {
         </Container>
       </section>
 
-      <section style={{ padding: "80px 0", backgroundColor: "#f5e7d0" }}>
+      <section
+        style={{
+          padding: "80px 0",
+          backgroundColor: "var(--bg-soft-alt)",
+          color: "var(--ink)",
+          borderTop: "1px solid var(--border-subtle)"
+        }}
+      >
         <Container>
           <div
             className="card"
@@ -123,7 +137,7 @@ export default function Projects() {
             </h2>
             <p
               style={{
-                color: "#555",
+                color: "var(--ink-muted)",
                 marginBottom: "24px",
                 lineHeight: 1.6
               }}
@@ -137,14 +151,20 @@ export default function Projects() {
         </Container>
       </section>
 
-      <section style={{ padding: "20px 0", backgroundColor: "#94856a" }}>
+      <section
+        style={{
+          padding: "20px 0",
+          backgroundColor: "var(--bg-alt)",
+          color: "var(--text)",
+          borderTop: "1px solid var(--border-subtle)"
+        }}
+      >
         <Container>
           <Button href="#/" variant="secondary">
             back to home
           </Button>
         </Container>
       </section>
-
     </>
   )
 }

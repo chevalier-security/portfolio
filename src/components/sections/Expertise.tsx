@@ -40,7 +40,8 @@ export default function Expertise() {
     <section
       style={{
         padding: "100px 0",
-        backgroundColor: "#f5e7d0"
+        backgroundColor: "var(--bg-soft)",
+        color: "var(--ink)"
       }}
     >
       <Container>
@@ -80,7 +81,7 @@ export default function Expertise() {
                   margin: 0,
                   listStyle: "none",
                   lineHeight: 1.8,
-                  color: "#555"
+                  color: "var(--ink-muted)"
                 }}
               >
                 {column.items.map((item) => (
